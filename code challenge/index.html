@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="area">
+        <h1 class="top-heading">The <b>privacy-friendly</b> URL Shortener</h1>
+        <div class="inner after-about-box">
+            <h1>Link Shortener</h1>
+            <div class="file">
+                <div class="form-container">
+                    <label>
+                        Enter a Link:
+                        <input class="main-input" type="text" placeholder="example.com" id="input">
+                    </label>
+                    <button type="submit" class="main-submit" id="submit">→</button>
+                    <label>
+
+                        <div class="radio-toolbar">
+                        Short domain:
+                        <input type="radio" id="domain1" name="domain" value="shrtco.de" checked="">
+                        <label for="domain1">shrtco.de</label>
+
+                        <input type="radio" id="domain2" name="domain" value="9qr.de">
+                        <label for="domain2">9qr.de</label>
+
+                        <input type="radio" id="domain3" name="domain" value="shiny.link">
+                        <label for="domain3">shiny.link</label>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="error-notification" id="error" style="display: none;"><b>Error</b> - Please enter a valid Link</div>
+            <p class="description">
+                With this free Link Shortener you can make Links shorter and easier to 
+                remember. Just enter a Link into the form and click on the above Button to 
+                generate a short Link. When visiting the short-Link, the short-Link will 
+                immediately redirect you to the long Link.
+            </p>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+</body>
+</html>
